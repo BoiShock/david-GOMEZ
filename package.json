@@ -9,4 +9,30 @@
     "test": "ng test",
     "server": "json-server --watch Stocks.json"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~12.1.0",
+    "@angular/cdk": "^12.2.13",
+    "@angular/common": "~12.1.0",
+    "@angular/compiler": "~12.1.0",
+    "@angular/core": "~12.1.0",
+    "@angular/forms": "~12.1.0",
+    "@angular/material": "^12.2.13",
+    "@angular/platform-browser": "~12.1.0",
+    "@angular/platform-browser-dynamic": "~12.1.0",
+    "@angular/router": "~12.1.0",
+    "export-from-json": "^1.7.0",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.2.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~12.1.0",
+    "@angular/cli": "~12.1.0",
+    "@angular/compiler-cli": "~12.1.0",
+    "@types/jasmine": "~3.6.0",
+    "@types/node": "^12.11.1",
+    "jasmine-core": "~3.7.0",
+    "json-server": "^0.17.0",
+    "karma": "~6.3.0",
+    "ka
