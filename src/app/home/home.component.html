@@ -1,0 +1,18 @@
+
+
+<div>
+<div class="stock-table">
+    <div class="table-head">
+        <span class="table-head-label">
+            Stocks
+        </span>
+
+    </div>
+
+    <form class="search-form">
+
+        <mat-form-field class="input-full-width">
+            <span matPrefix> </span>
+            <input type="text" matInput placeholder="Search" name="search"
+                (keyup)="onSearch($event)">
+            <!-- <button matSuffix mat-icon-button><mat-icon class="search-icon ">search</m
