@@ -59,4 +59,25 @@
                 true"></tr>
             <tr mat-row *matRowDef="let row; let i= index; columns:
                 displayedColumns;" (click)="getRowData(row,i)"
-              
+                [style.background]="clickedRow && selectedindex == i ? '#bff0f0': ''"></tr>
+
+        </table>
+   
+        <div *ngIf="showNoresults" class="no-result">    
+            <p> No results found</p>
+            <img class="nofound" src="assets/no-results.png" alt="Equity Bank Logo">
+        </div>
+    </div>
+    <div class="paginator-container">
+        <mat-paginator class="table-footer" #paginator [pageSize]="pageSize"
+            [pageSizeOptions]="pageSizeOptions" aria-label="Select page">
+        </mat-paginator>
+    </div>
+
+
+</div>
+
+    
+<app-stock-value [stock]="stock" ></app-stock-value>
+
+</div>
