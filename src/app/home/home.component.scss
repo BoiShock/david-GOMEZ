@@ -10,4 +10,55 @@
 
   align-items: center;
   text-align: center;
-  
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.table-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 16px;
+  position: static;
+  height: 54px;
+  background: #ffffff;
+  border-radius: 8px 8px 0px 0px;
+
+  .table-head-label {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 16px;
+    color: #221f1f;
+    text-align: center;
+  }
+}
+
+:host ::ng-deep .mat-sort-header-container {
+  justify-content: center;
+}
+
+.table-footer {
+  border-radius: 0 0 8px 8px;
+}
+
+.mat-header-cell {
+  background: #afaeae;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 10px;
+  color: #221f1f;
+}
+
+.mat-row:hover .mat-cell {
+  background-color: #d8d9da;
+  cursor: pointer;
+}
+
+.mat-row:active .mat-cell {
+  background-color: rgb(101, 103, 104);
+}
+
+.mat-cell {
+  font-size: 12px;
+  line-height: 10px;
+  color: #221f1
