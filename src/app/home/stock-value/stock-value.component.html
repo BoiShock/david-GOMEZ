@@ -40,4 +40,17 @@
         </div>
         <div class="paginator-container">
             <mat-paginator class="table-footer" [pageSize]="pageSize"
-    
+            [pageSizeOptions]="pageSizeOptions" aria-label="Select page">
+        </mat-paginator>
+        </div>
+        
+        <div class="button-row">
+            <button mat-raised-button color="primary" (click)="exportJson()">Export as JSON</button>
+
+        </div>
+
+    </div>
+
+ 
+   
+    <!-- </ng-template> -->

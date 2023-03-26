@@ -1,0 +1,39 @@
+.stock-table{
+    margin: auto;
+    padding-bottom: 50px;
+    width: 80%;
+
+    .table-head-label{
+      font-size: 18px;
+    }
+}
+
+.table-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 16px;
+  position: static;
+  height: 54px;
+  background: #ffffff;
+  border-radius: 8px 8px 0px 0px;
+}
+
+
+.table-footer {
+  border-radius: 0 0 8px 8px;
+}
+
+
+.mat-header-cell {
+  background: #afaeae;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 10px;
+  color: #221f1f;
+}
+
+
+
+.mat-cell {
+  font-size: 12px;
