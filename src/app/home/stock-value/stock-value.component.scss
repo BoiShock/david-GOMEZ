@@ -37,3 +37,37 @@
 
 .mat-cell {
   font-size: 12px;
+  line-height: 10x;
+  color: #221f1f;
+}
+
+:host ::ng-deep.mat-paginator .mat-paginator-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .mat-paginator-page-size {
+    margin-left: 12px;
+  }
+}
+
+.full-width-table {
+  width: 100%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+
+
+.wrap_table_stock {
+  max-height: 33.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+}
