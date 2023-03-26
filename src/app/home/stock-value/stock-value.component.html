@@ -24,4 +24,20 @@
     
                 <!-- Date Column -->
                 <ng-container matColumnDef="date">
-                
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Date</th>
+                    <td mat-cell *matCellDef="let row">{{row.date | date:'dd/MM/yyyy'}}</td>
+                </ng-container>
+    
+                <!-- Value Column -->
+                <ng-container matColumnDef="value">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Value</th>
+                    <td mat-cell *matCellDef="let row">{{row.value}}</td>
+                </ng-container>
+    
+                <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                <tr mat-row *matRowDef="let row; let i = index; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+        <div class="paginator-container">
+            <mat-paginator class="table-footer" [pageSize]="pageSize"
+    
